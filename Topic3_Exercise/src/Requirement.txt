@@ -1,0 +1,27 @@
+Sử dụng cấu trúc project Topic3_Exercise. Viết 1 chương trình quản lý 'n' Sinh viên
+gồm các tính năng sau:
+1. Nhập thông tin sinh viên (từ bàn phím) gồm:
+    - id: String
+    - firstName: String
+    - lastName: String
+    - dateOfBirth: Date
+    - gender: boolean
+2. In danh sách Sinh viên theo định dạng
+   ID       FullName            Age        Gender
+   HS001    Nguyen Hoan Tung    20         male
+   HS002    Pham Hai Yen        19         female
+   .....    ...........         ...        .....
+
+3. Tìm theo firstName (firstName có chứa từ khóa cần tìm) và in ra danh sách
+   Ex:
+   Nhập tên Sinh viên cần tìm: un
+   Kết quả tìm thấy:
+   ID       FullName            Age        Gender
+   HS001    Nguyen Hoan Tung    20         male
+   HS008    Pham Hai Trung      19       male
+   .....    ...........         ...        .....
+   
+   Ngược lại: Không tìm thấy Sinh viên nào
+
+4. Cập nhật các thông tin của sinh viên theo Id nhập vào. In ra danh sách sau khi
+   cập nhật thành công
