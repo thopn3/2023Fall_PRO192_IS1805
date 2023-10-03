@@ -1,17 +1,17 @@
 package DAO;
 
 import Entities.Product;
+import java.util.ArrayList;
 
 public class ProductDAO {
-    Product[] listProduct;
+    ArrayList<Product> listProduct;
 
     public ProductDAO() {
-        listProduct = new Product[100];
+        listProduct = new ArrayList<>();
     }
     
     public void addNewProduct(Product product){
-        int count = listProduct.length;
-        listProduct[count+1] = product;
+        listProduct.add(product);
     }
     
     public void showAllProducts(){
