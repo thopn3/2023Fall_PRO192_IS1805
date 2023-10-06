@@ -1,12 +1,13 @@
 
 import Ex.Student;
 import Ex.StudentDAO;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Run {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException{
         int n, choice = 0;
         StudentDAO sDao = new StudentDAO();
         
@@ -24,7 +25,7 @@ public class Run {
                     sDao.addStudents(n);
                     break;
                 case 2:
-                    
+                    sDao.printStudents();
                     break;
                 case 3:
                     
