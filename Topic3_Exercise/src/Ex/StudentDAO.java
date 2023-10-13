@@ -52,7 +52,18 @@ public class StudentDAO {
     }
     
     public void searchStudents(String fName){
-        
+        int cResult = 0;
+        System.out.println("Kết quả tìm kiếm: ");
+        System.out.println("ID\tFullname\tAge\tGender");
+        for(int i=0; i<count; i++){
+            if(students[i].getFirtName().toLowerCase().equals(fName.toLowerCase())){
+                System.out.println(students[i]);
+                cResult++;
+            }
+        }
+        if(cResult==0){
+            System.out.println("Không tìm thấy sinh viên nào thỏa mãn điều kiện tìm");
+        }
     }
     
     public void updateStudent(String studentId){

@@ -28,7 +28,9 @@ public class Run {
                     sDao.printStudents();
                     break;
                 case 3:
-                    
+                    System.out.print("Nhập tên sinh viên cần tìm: ");
+                    String fName = sc.nextLine();
+                    sDao.searchStudents(fName);
                     break;
                 case 4:
                     
