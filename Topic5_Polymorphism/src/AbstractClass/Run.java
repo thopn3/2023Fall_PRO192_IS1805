@@ -13,5 +13,21 @@ public class Run {
         System.out.println("Rectangle circumstance: " + s2.circumstance());
         System.out.println("Rectangle area: " + s2.area());
         
+        Shape s3 = new Shape() { // Anonymous class
+            double side = 10;
+            
+            @Override
+            public double circumstance() {
+                return 4*side;
+            }
+
+            @Override
+            public double area() {
+                return side*side;
+            }
+        };
+        
+        System.out.println("Square circumstance: "+ s3.circumstance());
+        System.out.println("Square area: "+ s3.area());
     }
 }
